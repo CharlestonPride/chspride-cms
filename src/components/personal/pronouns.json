@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_personal_pronouns",
+  "info": {
+    "displayName": "Pronouns"
+  },
+  "options": {},
+  "attributes": {
+    "Subjective": {
+      "type": "string"
+    },
+    "Objective": {
+      "type": "string"
+    },
+    "Possessive": {
+      "type": "string"
+    }
+  }
+}

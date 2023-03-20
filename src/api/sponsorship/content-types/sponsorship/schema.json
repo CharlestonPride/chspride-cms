@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsorships",
+  "info": {
+    "singularName": "sponsorship",
+    "pluralName": "sponsorships",
+    "displayName": "Sponsorship",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Price": {
+      "required": true,
+      "type": "decimal"
+    },
+    "NamingRights": {
+      "type": "boolean",
+      "default": false
+    },
+    "SocialMediaPosts": {
+      "type": "boolean",
+      "default": false
+    },
+    "VolunteerTshirt": {
+      "type": "boolean",
+      "default": false
+    },
+    "VendorPlot": {
+      "type": "enumeration",
+      "enum": [
+        "Large",
+        "Regular"
+      ]
+    },
+    "PrideFestivalTickets": {
+      "type": "integer",
+      "required": false,
+      "default": 1,
+      "min": 1
+    },
+    "GiftBags": {
+      "type": "integer",
+      "default": 1,
+      "required": false,
+      "min": 1
+    },
+    "PrismPartyTickets": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "required": false
+    },
+    "LogoAttribution": {
+      "type": "boolean",
+      "default": true
+    },
+    "SponsorBadge": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
